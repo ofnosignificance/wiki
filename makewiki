@@ -1,0 +1,26 @@
+#!/bin/sh -eu
+
+src_dir=src
+dst_dir=dst
+res_dir=res
+temp_dir=temp
+
+cat "$temp_dir/header_index" > "$dst_dir/index.xhtml"
+
+for f in `find $src_dir -type f`; do
+  f_html="$dst_dir/$(basename $f .md).xhtml"
+  f_html_s="$(basename $f .md).xhtml"
+  f_title=$(grep -m 1 -oP '^# \K.*' $f)
+
+  cat "$temp_dir/header_default.xhtml" > $f_html
+  pandoc $f -f markdown -t html >> $f_html
+  car "$temp_dir/footer_default.xhtml" >> $f_html
+
+  echo "<ul>" >> "$dst_dir/index.xhtml"
+  echo '<li><a href="$f_html_s">$f_title</li>'
+  echo "</ul>" >> "$dst_dir/index.xhtml"
+done
+
+cat "temp_dir/footer_index.xhtml" >> "$dst_dir/index.xhtml"
+
+cp -r $res_dir "$dst_dir/$res_dir"
