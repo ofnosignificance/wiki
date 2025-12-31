@@ -1,26 +1,32 @@
 #!/bin/sh -eu
 
-src_dir=src
-dst_dir=dst
-res_dir=res
-temp_dir=temp
+src_dir="src"
+dst_dir="dst"
+res_dir="res"
+temp_dir="temp"
 
-cat "$temp_dir/header_index" > "$dst_dir/index.xhtml"
+cat "$temp_dir/header_index.xhtml" > "$dst_dir/index.xhtml"
+pandoc "$src_dir/index.md" -f markdown -t html >> "$dst_dir/index.xhtml"
 
-for f in `find $src_dir -type f`; do
-  f_html="$dst_dir/$(basename $f .md).xhtml"
-  f_html_s="$(basename $f .md).xhtml"
-  f_title=$(grep -m 1 -oP '^# \K.*' $f)
+echo "<ul>" >> "$dst_dir/index.xhtml"
 
-  cat "$temp_dir/header_default.xhtml" > $f_html
-  pandoc $f -f markdown -t html >> $f_html
-  car "$temp_dir/footer_default.xhtml" >> $f_html
+for f in "$src_dir"/*.md; do
+    [ "$(basename "$f")" = "index.md" ] && continue
 
-  echo "<ul>" >> "$dst_dir/index.xhtml"
-  echo '<li><a href="$f_html_s">$f_title</li>'
-  echo "</ul>" >> "$dst_dir/index.xhtml"
+    f_base=$(basename "$f" .md)
+    f_html="$dst_dir/$f_base.xhtml"
+    f_html_s="$f_base.xhtml"
+    f_title=$(grep -m 1 -oP '^# \K.*' "$f" || echo "$f_base")
+
+    cat "$temp_dir/header_default.xhtml" > "$f_html"
+    pandoc "$f" -f markdown -t html >> "$f_html"
+    cat "$temp_dir/footer_default.xhtml" >> "$f_html"
+
+    echo "  <li><a href=\"$f_html_s\">$f_title</a></li>" >> "$dst_dir/index.xhtml"
 done
 
-cat "temp_dir/footer_index.xhtml" >> "$dst_dir/index.xhtml"
+echo "</ul>" >> "$dst_dir/index.xhtml"
 
-cp -r $res_dir "$dst_dir/$res_dir"
+cat "$temp_dir/footer_index.xhtml" >> "$dst_dir/index.xhtml"
+
+cp -r "$res_dir" "$dst_dir/"
