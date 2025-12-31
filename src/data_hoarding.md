@@ -1,3 +1,5 @@
+# Data hoarding
+
 The old blog that was here under the same domain had also a post on data
 hoarding. Too bad it was really just a pretentious waste of space and
 not worth saving. Instead of elaborating on why data hoarders cannot

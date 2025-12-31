@@ -1,7 +1,8 @@
+# Links
+
 It might be worth saying that I don\'t endorse any of these links.
 
 ## Personal Websites {#personal_websites}
-
 <https://ninipro.neocities.org> 🪨🪨🪨
 
 <https://sizeof.cat/>
@@ -63,7 +64,7 @@ and is plagued by spammers.)
 learning some obscure programming language (e.g. Forth) and don\'t know
 how to do basic algorithms or whatever.)
 
-[<http://www.sizecoding.org/wiki/Main_Page>](http://www.sizecoding.org/wiki/Main_Page?useskin=monobook)
+<http://www.sizecoding.org/wiki/Main_Page>
 
 <https://sinclair.wiki.zxnet.co.uk/wiki/Main_Page>
 
@@ -94,6 +95,8 @@ nail me on this one if you speak Spanish and dislike it. It\'s just here
 because I find it cool.)
 
 <https://segaxtreme.net/>
+
+<https://www.tohno-chan.org/>
 
 <https://sageru.org/>
 
@@ -148,8 +151,7 @@ the KYC issues and don\'t require more than just web hosting)
 
 ## Privacy, Security, and Anonymity {#privacy_security_and_anonymity}
 
-<https://geti2p.net/en/>, <https://i2pd.website/>,
-<https://i2pplus.github.io/>
+<https://geti2p.net/en/>, <https://i2pd.website/>, <https://i2pplus.github.io/>
 
 <https://lokinet.org/>
 
@@ -164,6 +166,7 @@ the KYC issues and don\'t require more than just web hosting)
 <https://github.com/markqvist/nomadnet>
 
 ## Operating Systems {#operating_systems}
+### Hobby OSes
 
 <https://serenityos.org/>
 
@@ -174,6 +177,10 @@ the KYC issues and don\'t require more than just web hosting)
 <https://duskos.org/>, <https://collapseos.org/>
 
 <https://www.monaos.org/>
+
+<https://menuetos.net/>
+
+<https://www.kolibrios.org/>
 
 ## Services
 

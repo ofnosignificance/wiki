@@ -1,3 +1,5 @@
+# Suckless
+
 Suckless is a cargo cult emphasizing what they call \"simplicity\",
 \"unix philosophy\", and \"minimalism\". In practice this minimalism
 looks like them writing the most trivial program imaginable and then

@@ -1,3 +1,5 @@
+# Stack Exchange Curiosity
+
 This page is conceptually similar to the [Wikipedia
 Curiosity](wikipedia_curisiosity.xhtml) page in the sense that it\'s
 about interesting topics on \"mainstream\" websites like Wikipedia, or

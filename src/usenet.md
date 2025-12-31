@@ -1,3 +1,5 @@
+# Usenet
+
 The Usenet is a decentralized communications network built on top of the
 NNTP, which has been around for practically 5ever. These days the Usenet
 faded into obscurity, while it used to be the biggest network of it\'s
@@ -13,21 +15,19 @@ specific ones) each having a particular topic or theme to it
 
 ## Interesting and active newsgroups {#interesting_and_active_newsgroups}
 
--   sci.math
--   comp.lang.lisp
--   comp.lang.forth
--   comp.lang.c++
+-   alt.2600
 -   alt.cyberpunk
 -   alt.cyberpunk.tech
 -   alt.privacy
--   alt.2600
+-   comp.lang.c++
+-   comp.lang.forth
+-   comp.lang.lisp
+-   sci.electronics.repair
+-   sci.math
 
 ## Usenet Archives {#usenet_archives}
 
 <https://olduse.net/>
-
 <https://narkive.com/>
-
 <https://www.usenetarchives.com/>
-
 <https://archive.org/details/usenet>

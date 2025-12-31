@@ -1,3 +1,5 @@
+# Emulator development
+
 **I\'m writing this article instead of continuing work on my own
 emulator, thus don\'t take it too seriously what I say here, it might as
 well be all wrong. This text is written just so I can learn myself from

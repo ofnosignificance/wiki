@@ -1,3 +1,5 @@
+# Text editors
+
 This page is dedicated to some text editors and my experience with them.
 
 ## Acme

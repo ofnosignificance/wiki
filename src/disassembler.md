@@ -1,3 +1,5 @@
+# Disassembler
+
 A disassembler is a software tool that displays the assembly
 instructions in a binary executable or object file. It works by going
 over the file in question and reading each opcode byte by byte and
