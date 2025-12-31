@@ -42,3 +42,17 @@ p, li, h1, h2, h3, h5 {
 
 a { color: #4a4a4a }
 a:visited { color: #2e2e2e }
+
+#mascot{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  #padding: 12px;
+}
+
+#mascot img{
+  display: block;
+  height: auto;
+  max-width: 350px;
+}
